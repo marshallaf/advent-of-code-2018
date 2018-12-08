@@ -1,8 +1,9 @@
+package day01
+
 import java.io.File
-import java.io.BufferedReader
 
 fun main(args: Array<String>) {
-    val frequencies = File("day01a-input.txt").readLines()
+    val frequencies = File("./src/day01/day01a-input.txt").readLines()
     var sum = 0
     val sums: MutableSet<Int> = mutableSetOf()
     foundLoop@ while (true) {

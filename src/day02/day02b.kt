@@ -1,7 +1,9 @@
+package day02
+
 import java.io.File
 
 fun main(args: Array<String>) {
-    val boxIds = File("day02a-input01.txt").readLines()
+    val boxIds = File("./src/day02/day02a-input01.txt").readLines()
     val boxIdsWithSortedChars = boxIds.map {
         it.toCharArray().sortedBy { it }.joinToString("")
     }
